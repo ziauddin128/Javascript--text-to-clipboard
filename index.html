@@ -1,0 +1,14 @@
+<input type="text" id="text" name="">
+<input type="submit" id="button" name="">
+
+<script type="text/javascript">
+	
+	var button = document.getElementById("button");
+
+	button.addEventListener("click",function()
+	{
+        var text = document.getElementById("text");
+        text.select();
+        document.execCommand("copy");
+	});
+</script>
